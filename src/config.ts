@@ -6,4 +6,7 @@ if (!parsed.hfToken) {
   throw new Error("Specify the Token of Hugging Face as --hfToken option.");
 }
 
-export const args = { hfToken: parsed.hfToken };
+export const config = {
+  port: { python: 18080 },
+  token: { hf: parsed.hfToken },
+};

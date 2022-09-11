@@ -1,7 +1,7 @@
 {
   "importMap": "./import_map.json",
   "tasks": {
-    "dev": "deno run --allow-run --watch src/index.ts",
+    "dev": "deno run --allow-run --allow-net --allow-write --watch src/index.ts",
     "compile:win": "deno compile --importmap import_map.json --target x86_64-pc-windows-msvc --output output/win/sample src/index.ts",
     "compile:linux": "deno compile --importmap import_map.json --target x86_64-unknown-linux-gnu --output output/linux/sample src/index.ts"
   }
