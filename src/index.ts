@@ -1,7 +1,8 @@
 import { readLines } from "std/io/mod.ts";
 import { sleep } from "sleep";
+import { pythonScript } from "./python.ts";
 
-console.log("Welcome to Deno!");
+console.log(pythonScript);
 
 const p = Deno.run({
   cmd: ["echo", "hello"],
